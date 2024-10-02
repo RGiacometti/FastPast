@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            textPast = new TextBox();
             label1 = new Label();
             hideButton = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textPast
             // 
-            textBox1.Location = new Point(23, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(287, 23);
-            textBox1.TabIndex = 0;
-            textBox1.UseSystemPasswordChar = true;
+            textPast.Location = new Point(23, 45);
+            textPast.Name = "textPast";
+            textPast.Size = new Size(287, 23);
+            textPast.TabIndex = 0;
+            textPast.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -67,7 +67,7 @@
             ClientSize = new Size(342, 139);
             Controls.Add(hideButton);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textPast);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -80,7 +80,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textPast;
         private Label label1;
         private Button hideButton;
     }
