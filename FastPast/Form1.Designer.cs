@@ -30,7 +30,7 @@
         {
             textPast = new TextBox();
             label1 = new Label();
-            hideButton = new Button();
+            displayButton = new Button();
             convertCheckBox = new CheckBox();
             SuspendLayout();
             // 
@@ -52,14 +52,15 @@
             label1.TabIndex = 1;
             label1.Text = "FastPast";
             // 
-            // hideButton
+            // displayButton
             // 
-            hideButton.Location = new Point(23, 87);
-            hideButton.Name = "hideButton";
-            hideButton.Size = new Size(114, 23);
-            hideButton.TabIndex = 2;
-            hideButton.Text = "Hide";
-            hideButton.UseVisualStyleBackColor = true;
+            displayButton.Location = new Point(23, 87);
+            displayButton.Name = "displayButton";
+            displayButton.Size = new Size(114, 23);
+            displayButton.TabIndex = 2;
+            displayButton.Text = "Show";
+            displayButton.UseVisualStyleBackColor = true;
+            displayButton.Click += displayButton_Click;
             // 
             // convertCheckBox
             // 
@@ -77,7 +78,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(342, 139);
             Controls.Add(convertCheckBox);
-            Controls.Add(hideButton);
+            Controls.Add(displayButton);
             Controls.Add(label1);
             Controls.Add(textPast);
             FormBorderStyle = FormBorderStyle.Fixed3D;
@@ -94,7 +95,7 @@
 
         private TextBox textPast;
         private Label label1;
-        private Button hideButton;
+        private Button displayButton;
         private CheckBox convertCheckBox;
     }
 }

@@ -19,7 +19,7 @@ namespace FastPast
 
             // wait 3 seconds
             System.Threading.Thread.Sleep(1000);
-            
+
             string text = convertCheckBox.Checked ? ConvertFRtoUS(textPast.Text) : textPast.Text;
 
             SendKeys.Send(text);
@@ -88,5 +88,18 @@ namespace FastPast
             return result;
         }
 
+        private void displayButton_Click(object sender, EventArgs e)
+        {
+            if (displayButton.Text == "Hide")
+            {
+                displayButton.Text = "Show";
+                textPast.UseSystemPasswordChar = true; 
+            }
+            else
+            {
+                displayButton.Text = "Hide";
+                textPast.UseSystemPasswordChar = false;
+            }
+        }
     }
 }
