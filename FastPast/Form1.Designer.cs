@@ -31,6 +31,7 @@
             textPast = new TextBox();
             label1 = new Label();
             hideButton = new Button();
+            convertCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // textPast
@@ -60,11 +61,22 @@
             hideButton.Text = "Hide";
             hideButton.UseVisualStyleBackColor = true;
             // 
+            // convertCheckBox
+            // 
+            convertCheckBox.AutoSize = true;
+            convertCheckBox.Location = new Point(157, 91);
+            convertCheckBox.Name = "convertCheckBox";
+            convertCheckBox.Size = new Size(115, 19);
+            convertCheckBox.TabIndex = 3;
+            convertCheckBox.Text = "Convert FR to US";
+            convertCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(342, 139);
+            Controls.Add(convertCheckBox);
             Controls.Add(hideButton);
             Controls.Add(label1);
             Controls.Add(textPast);
@@ -83,5 +95,6 @@
         private TextBox textPast;
         private Label label1;
         private Button hideButton;
+        private CheckBox convertCheckBox;
     }
 }
